@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de consulta de pacientes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/animate.min.css">  --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form class="form" action="#">
+            <h1>DENTAL CENTER</h1>
+            <h2>Formulario de consulta pacientes</h2>
+            <label for="campo">Buscar por:</label>
+            <select class="campo_filtro" id="campo" name="campo">
+                <option value="nombre">Nombre</option>
+                <option value="cedula">Cédula</option>
+            </select>
+            <input class="valor1" type="text" id="valor" name="valor" placeholder="Ingrese el valor a buscar">
+            <span class="obligatorio-texto">Campo obligatorio</span>
+            <input class="buttonaprimary" type="submit" value="Buscar">
+            <input  id = "NuevaConsulta" class="buttonsecondary" type="reset" value="Nueva consulta">
+        </form>
+        
+        <div class="content1">
+            <img class="animate__animated animate__jackInTheBox" src = "img/tooth.png" alt="tooth"/>  
+        </div>
+        <div id="contenedor"></div>
+    </div>
+    
+</body>
+    <script src="js/script.js"></script>
+</html>
